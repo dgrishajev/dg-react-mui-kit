@@ -1,0 +1,30 @@
+{
+  "name": "@dgrishajev/react-mui-kit",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/dgrishajev"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Dominic Grishajev",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "rollup": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@types/react": "^18.0.17",
+    "react": "^18.2.0",
+    "rollup": "^2.77.3",
+    "rollup-plugin-dts": "^4.2.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
