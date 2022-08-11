@@ -3,12 +3,11 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/dgrishajev"
   },
-  "version": "1.1.0",
-  "description": "",
+  "version": "1.3.0",
+  "description": "React Material UI Kit",
   "license": "ISC",
   "author": "Dominic Grishajev",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
@@ -24,9 +23,7 @@
     "rollup": "^2.77.3",
     "rollup-plugin-dts": "^4.2.2",
     "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
-  },
-  "peerDependencies": {
+    "typescript": "^4.7.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "@emotion/react": "^11.8.2",

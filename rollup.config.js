@@ -10,24 +10,19 @@ export default [
     input: "src/index.ts",
     output: [
       {
-        file: packageJson.main,
-        format: "cjs",
-        sourcemap: true,
-      },
-      {
-        file: packageJson.module,
+        file: "dist/index.js",
         format: "esm",
         sourcemap: true,
       },
     ],
     plugins: [
-      typescript({ tsconfig: "./tsconfig.json" }),
       resolve(),
       commonjs(),
+      typescript({ tsconfig: "./tsconfig.json" }),
     ],
   },
   {
-    input: "dist/esm/index.d.ts",
+    input: "dist/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
     external: ["react", "react-dom", "@emotion/react", "@emotion/core", "@mui/icons-material", "@mui/lab", "@mui/material", "@mui/styles", "tss-react"],
