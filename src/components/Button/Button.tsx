@@ -5,7 +5,7 @@ export interface ButtonProps {
 }
 
 const Button = (props: ButtonProps) => {
-  return <button>{props.label}</button>;
+  return <button>{props.label} foobar</button>;
 };
 
 export default Button;

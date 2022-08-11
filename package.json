@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/dgrishajev"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "license": "ISC",
   "author": "Dominic Grishajev",
@@ -21,10 +21,20 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.4",
     "@types/react": "^18.0.17",
-    "react": "^18.2.0",
     "rollup": "^2.77.3",
     "rollup-plugin-dts": "^4.2.2",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/lab": "^5.0.0-alpha.66",
+    "@mui/material": "^5.3.1",
+    "@mui/styles": "^5.3.0",
+    "tss-react": "^4.0.0-beta.3"
   }
 }
