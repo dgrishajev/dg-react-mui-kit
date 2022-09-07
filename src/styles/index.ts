@@ -5,4 +5,8 @@ export const {makeStyles, useStyles, withStyles} = createMakeAndWithStyles({
   useTheme,
 });
 
-export {lightTheme, darkTheme} from './theme';
+export {lightTheme, darkTheme, MAX_PAGE_CONTENT_WIDTH, MAX_ARTICLE_CONTENT_WIDTH} from './theme';
+
+export * from 'tss-react';
+
+export * from 'tss-react/nextJs';
