@@ -5,4 +5,4 @@ export const {makeStyles, useStyles, withStyles} = createMakeAndWithStyles({
   useTheme,
 });
 
-export {default} from './theme';
+export {lightTheme, darkTheme} from './theme';
