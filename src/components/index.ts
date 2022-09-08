@@ -1,3 +1,3 @@
 export * from '@mui/material';
-export {grey} from '@mui/material/colors';
-export {GlobalStyles} from 'tss-react';
+export {default as grey} from '@mui/material/colors/grey.js';
+export { GlobalStyles } from 'tss-react';
