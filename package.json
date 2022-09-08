@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/dgrishajev"
   },
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "React Material UI Kit",
   "license": "ISC",
   "author": "Dominic Grishajev",
