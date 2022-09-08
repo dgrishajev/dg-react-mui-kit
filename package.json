@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/dgrishajev"
   },
-  "version": "1.4.16",
+  "version": "1.4.17",
   "description": "React Material UI Kit",
   "license": "ISC",
   "author": "Dominic Grishajev",
@@ -12,9 +12,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && yarn build:module && yarn build:main && tsc",
-    "build:module": "babel src --out-dir dist --extensions '.ts' --presets @babel/preset-typescript --plugins @babel/plugin-transform-runtime",
-    "build:main": "babel src --out-dir dist/esm --extensions '.ts' --presets @babel/preset-env --plugins @babel/plugin-transform-runtime"
+    "build": "rm -rf dist && yarn build:modules && tsc",
+    "build:modules": "babel src --out-dir dist --extensions '.ts' --presets @babel/preset-typescript --plugins @babel/plugin-transform-runtime",
+    "build:types": "tsc"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",
