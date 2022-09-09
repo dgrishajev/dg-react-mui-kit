@@ -1,6 +1,6 @@
 {
   "name": "@dgrishajev/react-mui-kit",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "private": false,
   "description": "React Material UI Kit",
   "homepage": "https://github.com/dgrishajev/react-mui-kit#readme",
@@ -14,13 +14,6 @@
   "license": "ISC",
   "author": "Dominic Grishajev",
   "type": "module",
-  "files": [
-    "colors",
-    "components",
-    "icons",
-    "lab",
-    "styles"
-  ],
   "scripts": {
     "build": "rm -rf dist && yarn build:modules && yarn build:storybook && yarn build:types",
     "build:modules": "babel src --out-dir dist --extensions '.ts' --presets @babel/preset-typescript",
