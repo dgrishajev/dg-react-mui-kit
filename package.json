@@ -1,6 +1,6 @@
 {
   "name": "@dgrishajev/react-mui-kit",
-  "version": "1.5.1",
+  "version": "1.5.4",
   "private": false,
   "description": "React Material UI Kit",
   "homepage": "https://github.com/dgrishajev/react-mui-kit#readme",
@@ -13,12 +13,17 @@
   },
   "license": "ISC",
   "author": "Dominic Grishajev",
+  "type": "module",
   "files": [
-    "dist"
+    "colors",
+    "components",
+    "icons",
+    "lab",
+    "styles"
   ],
   "scripts": {
     "build": "rm -rf dist && yarn build:modules && yarn build:storybook && yarn build:types",
-    "build:modules": "babel src --out-dir dist --extensions='.ts','.tsx' --presets=@babel/preset-typescript,@babel/preset-env --plugins=@babel/plugin-transform-runtime",
+    "build:modules": "babel src --out-dir dist --extensions '.ts' --presets @babel/preset-typescript",
     "build:storybook": "build-storybook",
     "build:types": "tsc",
     "copy-package-files": "cp -rf package.json README.md LICENSE CHANGELOG.md dist",
@@ -40,8 +45,6 @@
   "devDependencies": {
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.19.0",
-    "@babel/plugin-transform-runtime": "^7.18.10",
-    "@babel/preset-env": "^7.19.0",
     "@babel/preset-typescript": "^7.18.6",
     "@storybook/addon-docs": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.9",
