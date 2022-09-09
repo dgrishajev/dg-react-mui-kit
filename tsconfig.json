@@ -5,5 +5,7 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "outDir": "dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true
   }
 }

@@ -194,7 +194,7 @@ declare module '@mui/material/styles/createPalette' {
   interface PaletteOptions extends PaletteExtends {}
 }
 
-const THEME_SHAPE_BORDER_RADIUS: number = 8;
+const THEME_SHAPE_BORDER_RADIUS = 8;
 
 // more info on dark mode: https://mui.com/material-ui/customization/dark-mode/
 const buildThemeOptions = (mode: 'light' | 'dark'): ThemeOptions => ({
@@ -409,6 +409,7 @@ const buildThemeOptions = (mode: 'light' | 'dark'): ThemeOptions => ({
 
 // global components styles overrides
 const addThemeOverrides = (theme: Theme) => {
+  /* eslint-disable no-param-reassign */
   theme.components = {
     MuiTabs: {
       defaultProps: {
@@ -527,7 +528,7 @@ const addThemeOverrides = (theme: Theme) => {
         standardError: {
           background: theme.palette.dangerShades[100],
           color: theme.palette.dangerShades[900],
-          border: `1px solid rgba(0 0 0 / 8%)`,
+          border: '1px solid rgba(0 0 0 / 8%)',
           '& .MuiAlert-icon': {
             color: theme.palette.dangerShades[700],
           },
@@ -598,6 +599,8 @@ const addThemeOverrides = (theme: Theme) => {
     };
   }
 
+  /* eslint-disable @typescript-eslint/ban-ts-comment */
+
   // @ts-ignore
   theme.containers.main[theme.breakpoints.down('md')] = {
     marginTop: theme.spacing(2),
@@ -607,6 +610,8 @@ const addThemeOverrides = (theme: Theme) => {
   theme.containers.modalContent[theme.breakpoints.down('md')] = {
     minWidth: 0,
   };
+
+  /* eslint-enable no-param-reassign, @typescript-eslint/ban-ts-comment */
 
   return responsiveFontSizes(theme);
 };
